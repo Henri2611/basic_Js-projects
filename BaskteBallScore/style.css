@@ -1,0 +1,92 @@
+body {
+  background-color: #0b0b0b; /* dark background like a real scoreboard */
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  border: 3px solid #ffffff33;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 20px #ffffff44;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.team {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.team h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.team span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #f94f6d; /* red scoreboard digits */
+}
+
+.buttons button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color: #666;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f94f6d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.controls button:hover {
+  background-color: #ff718a;
+}

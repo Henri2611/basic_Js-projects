@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Basketball Scoreboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Basketball Game</h1>
+
+    <div class="scoreboard">
+      <!-- HOME TEAM -->
+      <div class="team">
+        <h2>HOME</h2>
+        <span id="home">0</span>
+        <div class="buttons">
+          <button onclick="addPoints('A', 1)">+1 Point</button>
+          <button onclick="addPoints('A', 2)">+2 Points</button>
+          <button onclick="addPoints('A', 3)">+3 Points</button>
+        </div>
+      </div>
+
+      <!-- GUEST TEAM -->
+      <div class="team">
+        <h2>GUEST</h2>
+        <span id="guest">0</span>
+        <div class="buttons">
+          <button onclick="addPoints('B', 1)">+1 Point</button>
+          <button onclick="addPoints('B', 2)">+2 Points</button>
+          <button onclick="addPoints('B', 3)">+3 Points</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <p>TIME: <span id="timer">10:00</span></p>
+      <button id="start" onclick="startTimer()">START</button>
+      <button id="pause" onclick="pauseTimer()">PAUSE</button>
+      <button onclick="reset()">RESET GAME</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
